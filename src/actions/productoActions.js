@@ -108,7 +108,7 @@ export function borrarProdcutoAction(id) {
             // Si se elimina mostrar alerta
             Swal.fire(
                 '¡Eliminado!',
-                'Su producto se elimino con exito.',
+                'Su producto se elimino.',
                 'success'
               )
         } catch (error) {
