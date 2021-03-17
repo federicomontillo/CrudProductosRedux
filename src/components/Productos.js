@@ -12,7 +12,7 @@ export const Productos = () => {
         //Consultar API
         const cargarProductos = () => dispatch ( obtenerProductosAction() );
         cargarProductos();
-        
+        // eslint-disable-next-line
     }, []);
 
     // Obtener el State
@@ -35,7 +35,7 @@ export const Productos = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    { productos.length === 0 ? 'No hay productos' : (
+                    { productos.length === 0 ? <tr><td className="mt-3 bg-white">No hay productos</td></tr> : (
                         productos.map(producto => (
                             <Producto 
                                 key={producto.id}
